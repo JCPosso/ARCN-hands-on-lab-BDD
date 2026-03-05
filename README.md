@@ -6,7 +6,7 @@ Laboratorio base de BDD en Java con Cucumber, Selenium y Maven.
 
 Implementar y ejecutar un escenario BDD sencillo de busqueda en Google usando:
 
-- Feature en Gherkin.
+- Feature Google Search.
 - Step definitions con Selenium WebDriver.
 - Runner de Cucumber con JUnit.
 
@@ -43,7 +43,7 @@ ARCN-hands-on-lab-BDD/
 - Google Chrome y ChromeDriver instalados.
 - ChromeDriver accesible en `/usr/local/bin/chromedriver`.
 
-Si tu ChromeDriver esta en otra ruta, actualiza la propiedad en `bdd-java/src/test/java/steps/SearchSteps.java`:
+Si ChromeDriver esta en otra ruta, actualizar la propiedad en `bdd-java/src/test/java/steps/SearchSteps.java`:
 
 ```java
 System.setProperty("webdriver.chrome.driver", "/usr/local/bin/chromedriver");
@@ -78,8 +78,9 @@ Al ejecutar `mvn test`, Cucumber genera reportes en `bdd-java/target`:
 - `bdd-java/target/JUnitReports/report.xml`
 - `bdd-java/target/JSonReports/report.json`
 - `bdd-java/target/HtmlReports/report.html`
+- Reporte: [Ver reporte HTML](bdd-java/target/HtmlReports/report.html)
 
-## Notas importantes
 
-- El valor `glue="steps"` en el runner requiere que las step definitions esten en el paquete Java `steps`.
-- El proyecto ignora carpetas `target/` mediante `.gitignore` para evitar subir artefactos de build a GitHub.
+## Autor
+
+Juan Camilo Posso G.

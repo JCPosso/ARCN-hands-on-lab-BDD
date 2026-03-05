@@ -1,2 +1,8 @@
 # Maven build output
 target/
+
+!bdd-java/target/
+bdd-java/target/*
+!bdd-java/target/HtmlReports/
+bdd-java/target/HtmlReports/*
+!bdd-java/target/HtmlReports/report.html
